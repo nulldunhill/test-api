@@ -1,0 +1,17 @@
+{
+  "server": {
+    "port": 5000,
+    "cors": {
+      "credentials": true,
+      "origin": "http://localhost:5000",
+      "allowedHeaders": ["Origin", "X-Requested-With", "Content-Type", "Accept"],
+      "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"]
+    }
+  },
+  "db": {
+    "host": "localhost",
+    "database": "test_api_db",
+    "username": "postgres",
+    "password": "123456"
+  }
+}
