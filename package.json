@@ -7,7 +7,7 @@
   "scripts": {
     "start": "ts-node src/app.ts",
     "build": "tsc",
-    "test": "mocha './src/test/*.ts' --recursive --timeout 60000 --exit",
+    "test": "mocha --require ts-node/register --ui bdd .\\src\\test\\*.test.ts",
     "dev": "nodemon --watch \"src/**\" --ext \"ts,json\" --ignore \"src/**/*.spec.ts\" --exec \"ts-node src/app.ts\""
   },
   "author": "",
